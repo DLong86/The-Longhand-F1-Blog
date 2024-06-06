@@ -39,6 +39,12 @@ body {
 	font-size: 18px;
 }
 
+.links a {
+	list-style-type: none;
+	text-decoration: none;
+	color: inherit;
+}
+
 .links li {
 	cursor: pointer;
 }
@@ -113,13 +119,13 @@ body {
 }
 
 .title h1 span {
-	opacity: 50%;
+	color: #b3a577;
 }
 
 .main .title h3 {
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
-	opacity: 50%;
+	color: #b3a577;
 }
 
 .latest {
