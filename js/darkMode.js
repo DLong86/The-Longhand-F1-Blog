@@ -6,18 +6,35 @@ const nav = document.querySelector(".nav");
 const cards = document.querySelectorAll(".card");
 
 function lightMode() {
-	container.style.backgroundColor = "#f5f5f5";
-	body.style.backgroundColor = "#f5f5f5";
-	container.style.color = "#000";
-	nav.style.color = "#000";
-	cards.forEach((card) => {
-		card.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
+	if (sunIcon.classList.contains("fa-sun")) {
+		sunIcon.classList.add("fa-moon");
+		sunIcon.classList.remove("fa-sun");
+		container.style.backgroundColor = "#f5f5f5";
+		body.style.backgroundColor = "#f5f5f5";
+		container.style.color = "#000";
+		nav.style.color = "#000";
+		cards.forEach((card) => {
+			card.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
 
-		card.addEventListener("mouseenter", handleCardHover);
-		card.addEventListener("mouseleave", handleCardUnhover);
-	});
+			card.addEventListener("mouseenter", handleCardHover);
+			card.addEventListener("mouseleave", handleCardUnhover);
+		});
 
-	changeLinkColor("#000");
+		changeLinkColor("#000");
+	} else {
+		sunIcon.classList.add("fa-sun");
+		sunIcon.classList.remove("fa-moon");
+		container.style.backgroundColor = "#100c08";
+		body.style.backgroundColor = "#100c08";
+		container.style.color = "#fff";
+		nav.style.color = "#fff";
+		cards.forEach((card) => {
+			card.removeEventListener("mouseenter", handleCardHover);
+			card.removeEventListener("mouseleave", handleCardUnhover);
+		});
+
+		changeLinkColor("#fff");
+	}
 }
 
 function handleCardHover(event) {
