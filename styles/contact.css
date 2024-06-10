@@ -1,7 +1,7 @@
 .main {
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   /* background-color: #8f8f8f; */
   width: 80%;
   margin: 0 auto;
@@ -107,4 +107,41 @@
 .submit:hover {
   opacity: 50%;
   transition: 0.3s ease;
+}
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-right: 0;
+  }
+
+  .social-links i {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .form {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .form #textArea {
+    padding-bottom: 150px;
+  }
+
+  .social-container h1 {
+    font-size: 38px;
+  }
+
+  .social-container p {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
 }
