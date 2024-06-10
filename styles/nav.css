@@ -1,0 +1,62 @@
+.nav {
+	position: absolute;
+	top: 0;
+	left: 30%;
+	width: 40%;
+	margin: 0 auto;
+	padding: 20px;
+	padding-top: 30px;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	/* background-color: pink; */
+	transform: translateY(-100%);
+	transition: 0.5s ease;
+}
+
+.nav .links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 50px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.links a {
+	list-style-type: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+.links li {
+	cursor: pointer;
+}
+
+.links li:hover {
+	opacity: 60%;
+	transition: 0.3s ease;
+}
+
+.menu {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	padding: 29px 0;
+	padding-right: 30px;
+}
+
+.menu i {
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.menu i:hover {
+	opacity: 50%;
+	transition: 0.3s ease;
+}
