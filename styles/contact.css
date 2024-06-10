@@ -107,6 +107,8 @@
 .submit:hover {
   opacity: 50%;
   transition: 0.3s ease;
+  background-color: #232323;
+  color: #fff;
 }
 @media (max-width: 1000px) {
   .main {
