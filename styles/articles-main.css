@@ -17,6 +17,35 @@
 	margin: 0;
 }
 
+.article-options {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* background-color: pink; */
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.article-options h1 {
+	margin: 0;
+}
+
+.article-options ul {
+	display: flex;
+	gap: 50px;
+	list-style-type: none;
+	padding: 0;
+	text-decoration: none;
+}
+
+.article-options ul a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 600;
+}
+
 .latest-article {
 	/* background-color: grey; */
 	/* flex: 1; */
@@ -27,8 +56,13 @@
 	border-radius: 10px;
 }
 
+.latest-article h3 {
+	padding-top: 24px;
+}
+
 .latest-text {
 	padding: 0px 20px;
+	line-height: 1.4rem;
 }
 
 .articles-preview {
@@ -42,6 +76,15 @@
 	border-radius: 10px; */
 }
 
+h3 {
+	padding-bottom: 20px;
+}
+
+.text {
+	font-size: 14px;
+	line-height: 1.4rem;
+}
+
 .preview {
 	display: flex;
 	/* background-color: rgba(255, 192, 203, 0.573); */
@@ -50,6 +93,10 @@
 	border-radius: 10px;
 	padding: 20px;
 	/* margin-bottom: 10px; */
+}
+
+.articles-preview .text {
+	padding: 0 20px;
 }
 
 .latest-img {
@@ -63,4 +110,68 @@
 	height: 150px;
 	width: 450px;
 	background-color: slateblue;
+}
+
+@media (max-width: 1000px) {
+	.articles-container {
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+
+	.latest-article {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.latest-text {
+		padding: 0px;
+		line-height: 1.4rem;
+	}
+
+	.articles-preview {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.articles-preview .text {
+		width: 75%;
+		padding: 20px 0;
+		flex: 2;
+	}
+
+	.latest-img {
+		background-color: pink;
+		width: 100%;
+		/* margin: 0 auto; */
+		/* height: 320px; */
+	}
+
+	.preview-img {
+		/* height: 150px; */
+		width: 250px;
+		/* float: left; */
+		/* background-color: slateblue; */
+	}
+	.preview {
+		flex-direction: column;
+		border: 0;
+		border-radius: 0;
+		border-bottom: 1px solid grey;
+	}
+
+	.articles-preview .last {
+		border: none;
+	}
+
+	.article-options {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: inherit;
+	}
+
+	.article-options ul {
+		/* background-color: grey; */
+		width: 100%;
+		/* justify-content: space-between; */
+	}
 }
