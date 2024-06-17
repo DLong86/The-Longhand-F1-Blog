@@ -22,7 +22,7 @@ function lightMode() {
 			image.style.borderRadius = "10px";
 			image.style.padding = " 20px";
 		});
-		first.style.border = "none";
+		// first.style.border = "none";
 		cards.forEach((card) => {
 			card.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
 
@@ -38,7 +38,7 @@ function lightMode() {
 		body.style.backgroundColor = "#100c08";
 		container.style.color = "#fff";
 		nav.style.color = "#fff";
-		first.style.border = "";
+		// first.style.border = "";
 		imageCard.forEach((image) => {
 			image.style.boxShadow = "";
 			image.style.height = "";
