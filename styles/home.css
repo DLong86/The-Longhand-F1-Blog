@@ -182,6 +182,7 @@ body {
 	background-color: #232323;
 	transition: 0.5s ease;
 	border: none;
+	color: #fff;
 }
 
 .card-content {
